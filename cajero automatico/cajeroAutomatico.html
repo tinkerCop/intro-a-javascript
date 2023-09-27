@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajero Automático</title>
+</head>
+<body>
+    <h1>Cajero Automático</h1>
+    
+    <label for="cuentas">Selecciona una cuenta:</label>
+    <select id="cuentas">
+    <option value="0">Mali</option>
+    <option value="1">Gera</option>
+    <option value="2">Maui</option>
+    </select>
+    
+    <div id="passwordForm" style="display: none;">
+    <label for="password">Ingresa el password:</label>
+    <input type="password" id="password">
+    <button id="passwordSubmit">Ingresar</button>
+    <p id="passwordError" style="color: red; display: none;">Password incorrecto. Intenta nuevamente.</p>
+    </div>
+    
+    <div id="operaciones" style="display: none;">
+    <h2>Selecciona una opción:</h2>
+    <button id="saldo">Consultar saldo</button>
+    <button id="ingresar">Ingresar monto</button>
+    <button id="retirar">Retirar monto</button>
+    <p id="saldoActual"></p>
+    </div>
+
+    <script src="cajero.js"></script>
+</body>
+</html>
